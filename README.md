@@ -9,13 +9,13 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project builds a **production-grade credit risk scoring system** trained on 10,000 real US loan records from LendingClub (2007–2018). It predicts the probability that a loan applicant will default, and serves predictions via a live REST API — mirroring how real fintech companies like Affirm, Upstart, and JP Morgan assess creditworthiness.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Raw Data (LendingClub CSV)
@@ -41,7 +41,7 @@ Live Predictions (Approve / Review / Decline)
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 - **Source:** LendingClub — Real US peer-to-peer lending platform
 - **Size:** 10,000 loan records × 55 features
@@ -51,7 +51,7 @@ Live Predictions (Approve / Review / Decline)
 
 ---
 
-## 🔧 Feature Engineering
+##  Feature Engineering
 
 10 domain-specific financial features engineered from raw data:
 
@@ -70,7 +70,7 @@ Live Predictions (Approve / Review / Decline)
 
 ---
 
-## 🤖 Models
+##  Models
 
 ### XGBoost (Baseline)
 - `n_estimators=300`, `max_depth=5`, `learning_rate=0.05`
@@ -81,7 +81,7 @@ Live Predictions (Approve / Review / Decline)
 - 4-layer architecture: 128 → 64 → 32 → 1
 - BatchNorm + Dropout for regularization
 - Adam optimizer with ReduceLROnPlateau scheduler
-- **ROC-AUC: 0.71** 🏆
+- **ROC-AUC: 0.71** 
 
 ### Model Comparison
 | Model | ROC-AUC | Notes |
@@ -100,7 +100,7 @@ Model decisions are fully explainable using SHAP (SHapley Additive Explanations)
 
 ---
 
-## 🚀 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -134,7 +134,7 @@ POST /predict
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 credit_risk_project/
@@ -187,7 +187,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```
 pandas
@@ -209,7 +209,7 @@ jupyter
 
 ---
 
-## 📈 Results Summary
+##  Results Summary
 
 -  Neural Network outperforms XGBoost (AUC 0.71 vs 0.62)
 -  Real defaulter correctly identified with **99.20% probability**
@@ -223,7 +223,7 @@ jupyter
 
 ---
 
-## 👤 Author
+##  Author
 
 **CLYDE**
 - Built as part of a Fintech ML portfolio project
