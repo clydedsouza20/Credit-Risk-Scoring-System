@@ -1,4 +1,4 @@
-# 🏦 AI-Powered Credit Risk Scoring System
+#  Credit Risk Scoring System
 > End-to-end Machine Learning pipeline for predicting loan defaults using real US LendingClub data — deployed as a live REST API.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -211,24 +211,14 @@ jupyter
 
 ## 📈 Results Summary
 
-- ✅ Neural Network outperforms XGBoost (AUC 0.71 vs 0.62)
-- ✅ Real defaulter correctly identified with **99.20% probability**
-- ✅ Safe borrower correctly approved with only **0.16% default risk**
-- ✅ SHAP explainability layer for regulatory compliance
-- ✅ Live REST API serving real-time predictions
+-  Neural Network outperforms XGBoost (AUC 0.71 vs 0.62)
+-  Real defaulter correctly identified with **99.20% probability**
+-  Safe borrower correctly approved with only **0.16% default risk**
+-  SHAP explainability layer for regulatory compliance
+-  Live REST API serving real-time predictions
 
 ---
 
-## 💼 Resume Bullet Points
-
-```
-AI-Powered Credit Risk Scoring System | Python, XGBoost, PyTorch, FastAPI
-• Built end-to-end ML pipeline on 10,000 real US LendingClub loan records
-• Engineered 10 domain-specific financial features (DTI ratio, credit utilization, etc.)
-• Trained XGBoost (AUC 0.70) and PyTorch Neural Network (AUC 0.71) models
-• Implemented SHAP explainability for regulatory compliance (ECOA/fair lending)
-• Deployed as a live REST API using FastAPI, correctly identifying real defaulters
-  with 99.20% accuracy and approving safe borrowers at 0.16% risk
 ```
 
 ---
